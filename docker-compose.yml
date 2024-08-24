@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: shambhavik24/frontend-application-course:latest
+    container_name: frontend-container
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    stdin_open: true
+    tty: true
